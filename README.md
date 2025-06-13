@@ -5,15 +5,13 @@ Voici le texte corrigé en anglais, sans blocs de code ni encadrés, et fidèle 
 
 # AI\_Reinforcement
 
-This project allowed me to get started with reinforcement learning through several environments: Gridworld, Crawler, and Pacman.
-
-The files in which the main functions are implemented are listed below:
+This project allowed me to get started with reinforcement learning through several environments: Gridworld, Crawler, and Pacman. Note i did not create this project from scratch and it is taken from our ML/IA course, my contribution reside in the files bellow :
 
 * "valueIterationAgents.py": A value iteration agent for solving known MDPs.
 * "qlearningAgents.py": Q-learning agents for Gridworld, Crawler, and Pacman.
 * "mdp.py": Defines methods on general MDPs.
 * "learningAgents.py": Defines the base classes ValueEstimationAgent and QLearningAgent, which your agents will extend.
-* "util.py": Utilities, including util.Counter, which is particularly useful for Q-learners.
+  you can also see :
 * "gridworld.py": The Gridworld implementation.
 * "featureExtractors.py": Classes for extracting features on (state, action) pairs. Used for the approximate Q-learning agent (in qlearningAgents.py).
 
