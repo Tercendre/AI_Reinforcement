@@ -3,7 +3,7 @@
 
 
 Ce projet m’a permis de débuter en apprentissage par renforcement à travers plusieurs environnements : Gridworld, Crawler et Pacman. 
-À noter que je n’ai pas créé ce projet de toute pièce : il provient de notre cours de ML/IA. Ma contribution est l'impülémentation des fichiers suivants :
+À noter que je n’ai pas créé ce projet de toute pièce : il provient de notre cours de ML/IA. Ma contribution est l'implémentation des fichiers suivants :
 
 valueIterationAgents.py : un agent utilisant l’itération sur les valeurs pour résoudre des MDP connus.
 qlearningAgents.py : des agents de Q-learning pour Gridworld, Crawler et Pacman.
