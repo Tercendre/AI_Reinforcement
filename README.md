@@ -18,7 +18,7 @@ featureExtractors.py : classes d’extraction de caractéristiques sur les paire
 
 ---
 
-### Lancement manuel de Gridworld
+## PARTIE 1 _ Gridworld :
 
 Ce projet mêle deux approches de l’apprentissage par renforcement :
 
@@ -37,9 +37,6 @@ Méthode apprenante et modèle-free.
 
 nous commencerons par montrer la validité de nos agents sur Gridworld (PARTIE 1) Puis nous les appliquerons à un contrôleur de robot simulé (PARTIE 2 Crawler) et enfin à Pacman (PARTIE 3).
 
-
-
-**PARTIE 1 _ Gridworld :**
 
 On définit d'abord une grille Gridworld qui a deux sorties, +1 et -1. Notre agents se déplace en utilisant les flèches du clavier. Notez que lorsque vous souhaitez aller vers le haut, l'agent ne monte que 80% du temps. 
 
@@ -80,7 +77,7 @@ python gridworld.py -a q -k 5 -m
 
 Rappel : l’option -k contrôle le nombre d’épisodes d’apprentissage de votre agent. Observez comment il apprend sur l’état dans lequel il était, et non sur celui vers lequel il se déplace, "laissant l’apprentissage dans son sillage".
 
-**PARTIE 2 - Crawler**
+## PARTIE 2 - Crawler
 
 J’ai mis en place une politique epsilon-greedy dans `getAction` pour équilibrer exploration et exploitation.  
 This will invoke the crawling robot from class using our Q-learner. We can play around with the various learning parameters to see how they affect the agent's policies and actions. Note that the step delay is a parameter of the simulation, whereas the learning rate and epsilon are parameters of our learning algorithm, and the discount factor is a property of the environment.
@@ -89,7 +86,7 @@ Notez également qu’il faut attendre environ 1000 étapes pour observer une r�
 
 * python crawler.py
 
-**PARTIE 3 - PACMAN**
+## PARTIE 3 - PACMAN
 
 C’est l’heure de jouer à Pacman ! Pacman joue en deux phases. Durant la première phase, celle d’apprentissage, il commence à estimer la valeur des positions et des actions. Comme il faut beaucoup de temps pour apprendre des valeurs Q précises, même sur des petites grilles, les jeux d'entraînement de Pacman se déroulent sans interface graphique.
 
@@ -127,7 +124,7 @@ This project allowed me to get started with reinforcement learning through sever
 
 ---
 
-### Manual Launch of Gridworld
+## PART 1 - Gridworld
 
 This project combines two approaches to reinforcement learning:
 
@@ -145,7 +142,6 @@ We will start by validating our agents on Gridworld (PART 1), then apply them to
 
 ---
 
-## PART 1 - Gridworld
 
 First, we define a Gridworld grid that has two exits: +1 and -1. Our agent moves using the arrow keys. Note that when you try to move up, the agent only succeeds 80% of the time.
 
