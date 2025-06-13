@@ -1,9 +1,4 @@
-# AI_Reinforcement
-Voici le texte corrigé en anglais, sans blocs de code ni encadrés, et fidèle au contenu original :
-
----
-
-# AI\_Reinforcement
+# AI _ Reinforcement
 
 This project allowed me to get started with reinforcement learning through several environments: Gridworld, Crawler, and Pacman. Note i did not create this project from scratch and it is taken from our ML/IA course, my contribution reside in the files bellow :
 
@@ -11,7 +6,9 @@ This project allowed me to get started with reinforcement learning through sever
 * "qlearningAgents.py": Q-learning agents for Gridworld, Crawler, and Pacman.
 * "mdp.py": Defines methods on general MDPs.
 * "learningAgents.py": Defines the base classes ValueEstimationAgent and QLearningAgent, which your agents will extend.
-  you can also see :
+
+  
+  you can also see which are more support files :
 * "gridworld.py": The Gridworld implementation.
 * "featureExtractors.py": Classes for extracting features on (state, action) pairs. Used for the approximate Q-learning agent (in qlearningAgents.py).
 
