@@ -13,7 +13,7 @@ learningAgents.py : définit les classes de base ValueEstimationAgent et QLearni
 
 Vous pouvez également consulter les fichiers de support suivants :
 
-gridworld.py : implémentation de l’environnement Gridworld.
+gridworld.py : implémentation de l’environnement Gridworld.  
 featureExtractors.py : classes d’extraction de caractéristiques sur les paires (état, action), utilisées pour l’agent de Q-learning approximatif (dans qlearningAgents.py).
 
 ---
@@ -24,14 +24,14 @@ Ce projet mêle deux approches de l’apprentissage par renforcement :
 
 Value Iteration (Itération sur les valeurs) :
 
-Méthode déterministe et planificatrice.
-  - L’agent connaît à l’avance les règles de l’environnement (le MDP).
+Méthode déterministe et planificatrice.  
+  - L’agent connaît à l’avance les règles de l’environnement (le MDP).  
   - Il calcule la meilleure stratégie en mettant à jour les valeurs de chaque état jusqu’à convergence.
 
 Q-Learning :
 
-Méthode apprenante et modèle-free.
-  - L’agent n’a pas connaissance des règles, mais apprend en interagissant avec l’environnement.
+Méthode apprenante et modèle-free.  
+  - L’agent n’a pas connaissance des règles, mais apprend en interagissant avec l’environnement.  
   - Il ajuste ses estimations de la qualité d’une action dans un état (Q-valeurs) à partir des récompenses reçues.
 
 
@@ -41,13 +41,12 @@ nous commencerons par montrer la validité de nos agents sur Gridworld (PARTIE 1
 
 **PARTIE 1 _ Gridworld :**
 
-On définit d'abord une grille Gridworld qui a deux sorties, +1 et -1. Notre agents se déplace en utilisant les flèches du clavier. Notez que lorsque vous souhaitez aller vers le haut, 
-l'agent ne monte que 80% du temps. 
+On définit d'abord une grille Gridworld qui a deux sorties, +1 et -1. Notre agents se déplace en utilisant les flèches du clavier. Notez que lorsque vous souhaitez aller vers le haut, l'agent ne monte que 80% du temps. 
 
-Pour jouer :
+Pour jouer :  
 python gridworld.py -m
 
-Un premier agent qui bouge aléatoirement :
+Un premier agent qui bouge aléatoirement :  
 python gridworld.py -g MazeGrid
 
 **Value Iteration**
@@ -56,10 +55,9 @@ J’ai implémenté l’agent `ValueIterationAgent` dans `valueIterationAgents.p
 
 Méthodes implémentées :
 
-* `computeQValueFromValues`
+* `computeQValueFromValues`  
 * `computeActionFromValues`
-* 
-La commande suivante charge votre ValueIterationAgent, qui va calculer une politique et l’exécuter 10 fois. Appuyez sur une touche pour faire défiler les valeurs, les Q-valeurs et la simulation. Vous devriez constater que la valeur de l’état initial (V(start), affichée dans l’interface) et la récompense moyenne empirique (affichée après 10 exécutions) sont assez proches.
+* La commande suivante charge votre ValueIterationAgent, qui va calculer une politique et l’exécuter 10 fois. Appuyez sur une touche pour faire défiler les valeurs, les Q-valeurs et la simulation. Vous devriez constater que la valeur de l’état initial (V(start), affichée dans l’interface) et la récompense moyenne empirique (affichée après 10 exécutions) sont assez proches.
 
 python gridworld.py -a value -i 100 -k 10
 
